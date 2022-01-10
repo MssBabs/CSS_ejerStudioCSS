@@ -1,0 +1,601 @@
+@charset "UTF-8";
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+body nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body nav ul a {
+  display: inline;
+  text-decoration: none;
+  padding: 10px;
+}
+
+body nav ul li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+body nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+}
+
+body nav ul ul li {
+  float: none;
+  width: 150px;
+}
+
+body nav ul ul a {
+  line-height: 120%;
+  padding: 10px 15px;
+}
+
+body nav ul li:hover > ul {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.84);
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body main #contenedorRoundedCorners {
+  background-color: #7303c0;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 90%;
+  height: 14rem;
+}
+
+body main #contenedorRoundedCorners #BordesRoundedCorners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+}
+
+body main #contenedorRoundedCorners #BordesRoundedCorners1 {
+  border-radius: 1rem 3rem;
+  border: 0.2rem solid #03001e;
+  background-color: #fdeff9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 6rem;
+  height: 6rem;
+}
+
+body main #contenedorRoundedCorners #BordesRoundedCorners2 {
+  border-radius: 3rem 1rem;
+  border: 0.2rem solid #03001e;
+  background-color: #fdeff9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 6rem;
+  height: 6rem;
+}
+
+body main #contenedorBorderImages {
+  border: 2rem solid transparent;
+  padding: 1rem;
+  -o-border-image: url(../img/borderImage.png) 50 stretch;
+     border-image: url(../img/borderImage.png) 50 stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 90%;
+}
+
+body main #contenedorBackgrounds {
+  background-image: url(../img/boca-background.png), url(../img/vibrant-neon-colorful-liquid-background.jpg);
+  background-position: center bottom, left top;
+  background-repeat: no-repeat, repeat;
+  border-radius: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: rigth;
+      -ms-flex-align: rigth;
+          align-items: rigth;
+  text-align: center;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  color: #fdeff9;
+  width: 90%;
+  height: 27rem;
+}
+
+body main #contenedorBackgrounds h2 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+body main #contenedorGradients {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#03001e), color-stop(#7303c0), color-stop(#ec38bc), to(#fdeff9));
+  background-image: linear-gradient(#03001e, #7303c0, #ec38bc, #fdeff9);
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 90%;
+}
+
+body main #contenedorShadows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-shadow: 0 0 .5rem #7303c0, 0 0 1rem #ec38bc;
+          box-shadow: 0 0 .5rem #7303c0, 0 0 1rem #ec38bc;
+  border-radius: 4rem;
+  width: 20%;
+}
+
+body main #contenedorShadows h2 {
+  text-shadow: 0 0 .5rem #7303c0, 0 0 1rem #ec38bc;
+}
+
+body main #contenedorTextEffects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  /*vanishIn;*/
+  background-color: #03001e;
+  color: #fdeff9;
+  -webkit-box-shadow: 0 0 .5rem #ec38bc;
+          box-shadow: 0 0 .5rem #ec38bc;
+  border-radius: 1rem;
+  width: 10%;
+  height: 10rem;
+}
+
+body main #contenedorTextEffects h2 {
+  text-align: center;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  /*1º Posicionar texto de forma vertical*/
+  font-size: 1.8rem;
+  margin: 0;
+  /*2º Unir palabras*/
+  line-height: 1.6rem;
+  /*3º Crear distancia entre medias-> +alto == +separacion*/
+}
+
+body main #contenedorTextEffects #RotateTextEffects {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  /*Rotamos Texto para crear agrupacion de lectura-> ()*/
+}
+
+body main #contenedor2DTransforms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  margin: 4rem;
+  width: 90%;
+  height: 14rem;
+  border-radius: 6rem;
+}
+
+body main #contenedor2DTransforms #contenedorimg2DTransforms img:hover {
+  -webkit-transform: rotateZ(60deg);
+          transform: rotateZ(60deg);
+}
+
+body main #contenedor2DTransforms #contenedorimg2DTransforms {
+  max-width: 20rem;
+}
+
+body main #contenedor2DTransforms #contenedorimg2DTransforms #img2DTransforms {
+  max-width: 100%;
+}
+
+body main #contenedor3DTransforms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  margin: 4rem;
+  width: 90%;
+  height: 14rem;
+}
+
+body main #contenedor3DTransforms #contenedorimg3DTransforms:hover {
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
+}
+
+body main #contenedor3DTransforms #contenedorimg3DTransforms {
+  max-width: 15rem;
+}
+
+body main #contenedor3DTransforms #contenedorimg3DTransforms #img3DTransforms {
+  max-width: 100%;
+}
+
+body main #contenedorTransitions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  margin: 4rem;
+}
+
+body main #contenedorTransitions #contenedorimg:hover {
+  width: 30rem;
+}
+
+body main #contenedorTransitions #contenedorimg {
+  width: 15rem;
+  -webkit-transition: width 2s, height 4s;
+  transition: width 2s, height 4s;
+}
+
+body main #contenedorTransitions #contenedorimg #img {
+  width: 100%;
+}
+
+body main #contenedorAnimations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  margin: 4rem;
+}
+
+body main #contenedorAnimations #contenedorimg:hover {
+  width: 30rem;
+}
+
+body main #contenedorAnimations #contenedorimg {
+  width: 15rem;
+  position: relative;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes example {
+  0% {
+    background-color: #c49cdf;
+    left: 0rem;
+    top: 0rem;
+  }
+  25% {
+    background-color: #6599e2;
+    left: 4rem;
+    top: 0rem;
+  }
+  50% {
+    background-color: #61c2e4;
+    left: 4rem;
+    top: 4rem;
+  }
+  75% {
+    background-color: #c4e17f;
+    left: 0rem;
+    top: 4rem;
+  }
+  100% {
+    background-color: #f7fdca;
+    left: 0rem;
+    top: 0rem;
+  }
+}
+
+@keyframes example {
+  0% {
+    background-color: #c49cdf;
+    left: 0rem;
+    top: 0rem;
+  }
+  25% {
+    background-color: #6599e2;
+    left: 4rem;
+    top: 0rem;
+  }
+  50% {
+    background-color: #61c2e4;
+    left: 4rem;
+    top: 4rem;
+  }
+  75% {
+    background-color: #c4e17f;
+    left: 0rem;
+    top: 4rem;
+  }
+  100% {
+    background-color: #f7fdca;
+    left: 0rem;
+    top: 0rem;
+  }
+}
+
+body main #contenedorAnimations #contenedorimg #img {
+  width: 100%;
+}
+
+body main #contenedorTooltips {
+  position: relative;
+  display: inline-block;
+  border-bottom: 0.25rem dotted #7303c0;
+}
+
+body main #contenedorTooltips #tooltiptext {
+  visibility: hidden;
+  width: 8rem;
+  background-color: #03001e;
+  color: #fdeff9;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  position: absolute;
+  z-index: 1;
+}
+
+body main #contenedorTooltips:hover #tooltiptext {
+  visibility: visible;
+}
+
+body main #contenedorButtons #buttons {
+  width: 12rem;
+  height: 4rem;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #7303c0;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: #03001e;
+  border: 0.25rem solid;
+  border-color: #7303c0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  position: relative;
+}
+
+body main #contenedorButtons #buttons:hover {
+  background: #7303c0;
+  color: #fdeff9;
+}
+
+body main #contenedorPagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  margin: 4rem;
+}
+
+body main #contenedorPagination #pagination {
+  display: inline-block;
+  gap: 1rem;
+}
+
+body main #contenedorPagination #pagination a {
+  background-color: #7303c0;
+  color: #fdeff9;
+  float: left;
+  padding: 0.25rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+body main #contenedorPagination #pagination a.active {
+  border-radius: 0.25rem;
+}
+
+body main #contenedorMultipleColumns {
+  -webkit-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 1.2rem;
+          column-gap: 1.2rem;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body main #contenedorMultipleColumns h2 {
+  -webkit-column-span: all;
+          column-span: all;
+}
+
+body main #contenedorUserInterface {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  margin: 4rem;
+  resize: horizontal;
+  overflow: auto;
+}
+/*# sourceMappingURL=estudioCss.css.map */

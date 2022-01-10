@@ -1,0 +1,237 @@
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+body nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body nav ul a {
+  display: inline;
+  text-decoration: none;
+  padding: 10px;
+}
+
+body nav ul li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+body nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+}
+
+body nav ul ul li {
+  float: none;
+  width: 150px;
+}
+
+body nav ul ul a {
+  line-height: 120%;
+  padding: 10px 15px;
+}
+
+body nav ul li:hover > ul {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.84);
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body main #contenedorDeEtiquetas s {
+  color: red;
+  font-size: 0.75rem;
+}
+
+body main .lorem {
+  border-color: #7cf390;
+  -webkit-box-shadow: 4px 4px 4px 2px rgba(124, 243, 144, 0.404);
+          box-shadow: 4px 4px 4px 2px rgba(124, 243, 144, 0.404);
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 60rem;
+}
+
+body main #iris {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  height: 8rem;
+  width: 60rem;
+  border-radius: 4rem;
+  background: repeating-linear-gradient(to right, #c4e17f, #f7fdca, #fad071, #f0766b, #db9dbe, #c49cdf, #6599e2, #61c2e4);
+}
+
+body main #contenedorDeAtributos a[href^="https"] {
+  background-color: yellow;
+}
+
+body main #contenedorDeAtributos a[target] {
+  background-color: orangered;
+}
+
+body main #tituloEtiquetas:target, body main #tituloClases:target, body main #tituloIdentificador:target, body main #tituloAtributos:target, body main #tituloPseudoClases:target, body main #tituloPseudoElementos:target {
+  font-size: 4rem;
+  background-color: rgba(255, 68, 0, 0.486);
+}
+
+body main #contenedorPseudoClases {
+  /*  Lista Dias de la Semana (first-child, lastchild, nth-child...)  */
+}
+
+body main #contenedorPseudoClases p[lang="it"] {
+  font-size: small;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2ee62e;
+}
+
+body main #contenedorPseudoClases p[lang="es"] {
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #e72222;
+}
+
+body main #contenedorPseudoClases p[lang="fr"] {
+  font-size: larger;
+  font-family: 'Times New Roman', Times, serif;
+  color: #1a6ac5;
+}
+
+body main #contenedorPseudoClases ul li:first-child {
+  color: #293546;
+}
+
+body main #contenedorPseudoClases ul li:nth-child(2n) {
+  color: #2F4858;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+body main #contenedorPseudoClases ul li:nth-child(3n) {
+  color: #1E667C;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+body main #contenedorPseudoClases ul li:nth-child(4n) {
+  color: #008699;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+body main #contenedorPseudoClases ul li:nth-child(5n) {
+  color: #00A8AC;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+body main #contenedorPseudoClases ul li:nth-child(6n) {
+  color: #00C9B3;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+body main #contenedorPseudoClases ul li:last-child {
+  color: #0EEAAE;
+  background-color: black;
+}
+
+body main #contenedorPseudoElementos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+body main #contenedorPseudoElementos p::first-letter {
+  color: teal;
+  font-size: 4rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body main #contenedorPseudoElementos p:first-of-type::first-line {
+  font-style: italic;
+}
+
+body main #contenedorPseudoElementos p::after {
+  content: ".";
+}
+/*# sourceMappingURL=estudioSelectores.css.map */

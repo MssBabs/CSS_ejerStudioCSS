@@ -1,0 +1,334 @@
+@import "estructuraBase.scss";
+
+body{
+    main{
+        #contenedorRoundedCorners{
+            background-color: #7303c0;
+            border-radius: 1rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            width: 90%;
+            height: 14rem;
+
+            #BordesRoundedCorners{
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+            }
+
+            #BordesRoundedCorners1{
+                border-radius: 1rem 3rem;;
+                border: 0.2rem solid #03001e;
+                background-color: #fdeff9;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 6rem;
+                height: 6rem;
+            }
+
+            #BordesRoundedCorners2{
+                border-radius: 3rem 1rem;;
+                border: 0.2rem solid #03001e;
+                background-color: #fdeff9;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 6rem;
+                height: 6rem;
+            }
+        }
+
+        #contenedorBorderImages{
+            border: 2rem solid transparent;
+            padding: 1rem;
+            border-image: url(../img/borderImage.png) 50 stretch;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            width: 90%;
+        }
+
+        #contenedorBackgrounds{
+            background-image: url(../img/boca-background.png), url(../img/vibrant-neon-colorful-liquid-background.jpg);
+            background-position: center bottom, left top;
+            background-repeat: no-repeat, repeat;
+            border-radius: 4rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: rigth;
+            text-align: center;
+            writing-mode: vertical-lr;
+            color: #fdeff9;
+            width: 90%;
+            height: 27rem;
+
+            h2{
+                transform: rotate(180deg);
+            }
+        }
+
+        #contenedorGradients{
+            background-image: linear-gradient(#03001e, #7303c0, #ec38bc, #fdeff9);
+            border-radius: 1rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+        }
+
+        #contenedorShadows{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 0 .5rem #7303c0, 0 0 1rem #ec38bc;
+            border-radius: 4rem;
+
+            width: 20%;
+
+            h2{
+                text-shadow: 0 0 .5rem #7303c0, 0 0 1rem #ec38bc;
+            }
+        }
+
+        #contenedorTextEffects{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            /*vanishIn;*/
+
+            background-color: #03001e;
+            color: #fdeff9;
+            box-shadow: 0 0 .5rem #ec38bc;
+            border-radius: 1rem;
+            width: 10%;
+            height: 10rem;
+
+            h2{
+                text-align: center;
+                writing-mode: vertical-lr;      /*1º Posicionar texto de forma vertical*/
+                font-size: 1.8rem;
+                margin: 0;                      /*2º Unir palabras*/
+                line-height: 1.6rem;            /*3º Crear distancia entre medias-> +alto == +separacion*/
+            }
+              
+            #RotateTextEffects{
+                transform: rotate(180deg);     /*Rotamos Texto para crear agrupacion de lectura-> ()*/
+            }
+        }
+
+        
+        #contenedor2DTransforms{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            margin: 4rem;
+            width: 90%;
+            height: 14rem;
+            border-radius: 6rem;
+
+            #contenedorimg2DTransforms img:hover{
+                transform: rotateZ(60deg);
+            }
+            #contenedorimg2DTransforms{
+                max-width: 20rem;
+         
+                #img2DTransforms{
+                    max-width: 100%;
+                }
+            }
+            
+        }
+
+        #contenedor3DTransforms{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            margin: 4rem;
+
+            width: 90%;
+            height: 14rem;
+            #contenedorimg3DTransforms:hover{
+                transform: rotate(70deg);
+            }
+            #contenedorimg3DTransforms{
+                max-width: 15rem;
+                
+                #img3DTransforms{
+                    max-width: 100%;
+                }
+            }
+        }
+        
+        #contenedorTransitions{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            margin: 4rem;
+
+            #contenedorimg:hover{
+                width: 30rem;
+               
+            }
+            #contenedorimg{
+                width: 15rem;
+                transition: width 2s, height 4s;
+                #img{
+                    width: 100%;
+                }
+            }
+        }
+
+        #contenedorAnimations{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            margin: 4rem;
+
+            #contenedorimg:hover{
+                width: 30rem;
+            }
+            #contenedorimg{
+                width: 15rem;
+                position: relative;
+                animation-name: example;
+                animation-duration: 4s;
+                @keyframes example {
+                    0%   {background-color:#c49cdf; left:0rem; top:0rem;}
+                    25%  {background-color:#6599e2; left:4rem; top:0rem;}
+                    50%  {background-color:#61c2e4; left:4rem; top:4rem;}
+                    75%  {background-color:#c4e17f; left:0rem; top:4rem;}
+                    100% {background-color:#f7fdca; left:0rem; top:0rem;}
+                  }
+                #img{
+                    width: 100%;
+                }
+            }
+        }
+
+
+
+
+        #contenedorTooltips{
+            position: relative;
+            display: inline-block;
+            border-bottom: 0.25rem dotted #7303c0;
+        }
+        #contenedorTooltips #tooltiptext{
+            visibility: hidden;
+            width: 8rem;
+            background-color: #03001e;
+            color: #fdeff9;
+            text-align: center;
+            padding: 2rem;
+            border-radius: 2rem;
+            position: absolute;
+            z-index: 1;
+        }
+        #contenedorTooltips:hover #tooltiptext{
+            visibility: visible;
+        }
+
+        #contenedorButtons{
+            #buttons{
+                width: 12rem;
+                height: 4rem;
+
+                text-align: center;
+                align-content: center;
+
+                color: #7303c0;
+                font-weight: 500;
+                padding: 0.5em 1.2em;
+
+                background: #03001e;
+                border: 0.25rem solid;
+                border-color: #7303c0;
+                transition: all 1s ease;
+
+                position: relative;
+            }
+            #buttons:hover{
+                background: #7303c0;
+                color: #fdeff9;
+            }
+        }
+
+        #contenedorPagination{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            margin: 4rem;
+
+            #pagination {
+                display: inline-block;
+                gap: 1rem;
+            
+                a{
+                background-color: #7303c0;
+                color:#fdeff9;
+                float: left;
+                padding: 0.25rem;
+                text-decoration: none;
+                border-radius: 0.25rem;
+
+                transition: background-color .3s;
+                }
+                a.active{
+                    border-radius: 0.25rem;
+                }
+            }
+        }
+
+        #contenedorMultipleColumns{
+            column-count: 3;
+            column-gap: 1.2rem;
+            text-align: center;
+            align-content: center;
+
+            h2 {
+                column-span: all;
+            }
+        }
+
+        #contenedorUserInterface{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            margin: 4rem;
+            
+            resize: horizontal;
+            overflow: auto;
+        }
+    }
+}
